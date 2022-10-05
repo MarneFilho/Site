@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The best football collection of pixel art</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: 'Press Start 2P', cursive; font-size: 10px; 
+background: -webkit-linear-gradient(90deg, rgb(33, 40, 143), rgb(24, 26, 99));
+background: linear-gradient(90deg, rgb(33, 40, 143), rgb(24, 26, 99));
+display:flex;
+flex-direction: column;
+
+
+
+ color: white;}
+.mySlides {display: none}
+b {
+    font-family: 'Press Start 2P', cursive; font-size: 22px;
+    color: white;
+}
+form {
+    margin-left:20px; margin-right:20px;
+}
+footer{
+    
+    background: rgb(4, 11, 57);
+
+}
+bgvin{
+    background: rgb(4, 11, 57); 
+}
+fn{
+    font-family: 'Press Start 2P', cursive; font-size: 8px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    border-top: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+tt {
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+</style>
+
+</head>
+<body>
+<!-- background-color:rgb(105, 3, 45)-->
+<!-- Navbar -->
+<nav class="w3-top">
+  <div class="w3-bar w3-card a" style= "color:rgb(255, 255, 255);
+  background: rgb(4, 11, 57)
+  ">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <bgvin><a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-center"><img src="Image/CapaOriginal.png" alt="Logo" width="14%" height="7%"> </a>
+    </bgvin>
+    <a href="index.html" display:block; top: -1300px;" class="w3-bar-item w3-button w3-padding-large w3-center">History</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">About collection</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">Schedule</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">Team</a>
+    
+    <!--div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div-->
+
+    <a href= "https://twitter.com/PWCS22" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"><img src="Image/twitterlogo.png" alt="Twitter" width="16px" height="16px"> </a>
+    <a href= "#" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"> Mint Page </a>
+  </div>
+</nav>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!--div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#History" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">History</a>
+  <a href="#About" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Collection</a>
+  <a href="#Schedule" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Schedule</a>
+  
+</div-->
+
+
+<!-- Footer -->
+<footer class=" w3-center w3-bar-item w3-hide-medium">
+    <fn>Check all annoucements in our Twitter page <br></fn>
+    <fn>Our team will never ask for your seed phrase<br></fn>
+    <fn>We are not responsible for Scams, always check for our contract in page, or twitter <br></fn>
+    <fn>Remember: Before we open the sales, we will announce in Twitter, always check @PWCS22 before you do something <br></fn>
+
+    <a href= "https://twitter.com/PWCS22" class="w3-bar-item  w3-hide-small w3-center w3-dropdown-hover"><img src="Image/twitterlogo.png" alt="Twitter" width="16px" height="16px"> </a>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
